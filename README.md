@@ -9,4 +9,4 @@ where s.RowId = (
    where s2.ItemId = s.ItemId and h2.WarehouseId = h.WarehouseId 
 );
 
-./ https://github.com/SR-Akash
+./https://github.com/SR-Akash
