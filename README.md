@@ -1,6 +1,6 @@
 # List Last record of each item in mysql
 
-select s.* from pos.ItemSellingPriceRow s
+- select s.* from pos.ItemSellingPriceRow s
 join pos.ItemSellingPriceHeader h on s.HeaderId = h.HeaderId
 where s.RowId = (
    select max(s2.RowId) 
@@ -9,4 +9,3 @@ where s.RowId = (
    where s2.ItemId = s.ItemId and h2.WarehouseId = h.WarehouseId 
 );
 
-./https://github.com/SR-Akash
