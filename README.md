@@ -8,3 +8,5 @@ where s.RowId = (
    join pos.ItemSellingPriceHeader h2 on s2.HeaderId = h2.HeaderId
    where s2.ItemId = s.ItemId and h2.WarehouseId = h.WarehouseId 
 );
+
+./ https://github.com/SR-Akash
