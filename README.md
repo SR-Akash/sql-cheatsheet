@@ -1,4 +1,4 @@
-#List Last record of each item in mysql
+# List Last record of each item in mysql
 
 select s.*
 from pos.ItemSellingPriceRow s
