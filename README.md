@@ -1,5 +1,5 @@
 
-# List Last record of each item in mysql
+### List Last record of each item in mysql
 
 - select s.* from pos.ItemSellingPriceRow s
 join pos.ItemSellingPriceHeader h on s.HeaderId = h.HeaderId
@@ -10,7 +10,7 @@ where s.RowId = (
    where s2.ItemId = s.ItemId and h2.WarehouseId = h.WarehouseId 
 );
 
-## Group By Having
+### Group By Having
 
 -  select COUNT(SalesOrderId), SalesOrderCode from dbo.SalesDelivery
  where AccountId  in (20219)
