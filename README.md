@@ -10,3 +10,9 @@ where s.RowId = (
    where s2.ItemId = s.ItemId and h2.WarehouseId = h.WarehouseId 
 );
 
+## Group By Having
+
+-  select COUNT(SalesOrderId), SalesOrderCode from dbo.SalesDelivery
+ where AccountId  in (20219)
+ group by SalesOrderCode
+ Having COUNT(SalesOrderId) >1
